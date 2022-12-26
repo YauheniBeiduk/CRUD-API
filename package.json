@@ -1,0 +1,45 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "cross-env NODE_ENV=development nodemon -w src src/server.js",
+    "build": "webpack --config webpack.config.js --mode production",
+    "start:prod": "npm run build && node dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YauheniBeiduk/CRUD-API.git"
+  },
+  "keywords": [
+    "CRUD-API"
+  ],
+  "author": "Yauheni Beiduk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YauheniBeiduk/CRUD-API/issues"
+  },
+  "homepage": "https://github.com/YauheniBeiduk/CRUD-API#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.30.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin": "^1.0.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "nodemon": "^2.0.20",
+    "parser": "^0.1.4",
+    "prettier": "^2.8.1",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
