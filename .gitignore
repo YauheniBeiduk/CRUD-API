@@ -1,7 +1,9 @@
 .idea
 node_modules
 dist
+dist/main.js
 
+.env
 .DS_Store
 .AppleDouble
 .LSOverride

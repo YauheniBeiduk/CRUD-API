@@ -6,15 +6,15 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 export default {
     mode: "production",
     target: "node",
-    entry: "./src/server.js",
+    entry: "./src/server.ts",
     module: {
         rules: [
             {
-                test: /\.js?$/,
+                test: /\.ts?$/,
                 use: {
-                    loader: "babel-loader",
+                    loader: "ts-loader",
                 },
-                exclude: [/node_modules/, /dist/],
+                exclude: [/node_modules/],
             },
         ],
     },
