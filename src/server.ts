@@ -6,14 +6,14 @@ import { getAllUsers, getUser, createUser, updateUser, deleteUser } from "./api"
 
 dotenv.config();
 
-type User = {
+interface User {
     id: string,
     username: string,
     age: number,
     hobbies: string[],
-};
+}
 
-const users: any[] = [];
+const users: User[] = [];
 
 const server = createServer((request, response) => {
     const { url, method } = request;
@@ -41,7 +41,7 @@ const server = createServer((request, response) => {
 
 
 const port = process.env.PORT;
-console.log(port);
+
 server.listen(port);
 
 export default server;

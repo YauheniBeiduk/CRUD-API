@@ -1,5 +1,4 @@
 import {IncomingMessage, ServerResponse} from "http";
-import {v4 as uuidv4} from "uuid";
 
 export const sendResponse = (response: ServerResponse & { req: IncomingMessage; }, statusCode: number, body: any) => {
     response.statusCode = statusCode;
