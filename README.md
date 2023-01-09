@@ -46,7 +46,7 @@ Service allow to work with ``User`` entity.
 
 ### Some examples of usage
 
-# REST API
+## REST API
 
 The REST API to the example app is described below.
 
@@ -58,7 +58,7 @@ The REST API to the example app is described below.
 
 ### Response
 
-    status code 200 and all users records
+   status code 200 and all users records
 
 ## Create a new user
 
@@ -70,7 +70,8 @@ The REST API to the example app is described below.
       username — user's name (string, required)
       age — user's age (number, required)
       hobbies — user's hobbies (array of strings or empty array, required)
-    {"username":"Name","age":20, hobbies: [""]}
+      
+   example -> {"username":"Name","age":20, hobbies: [""]}
 
 ## Get a specific user by id
 
